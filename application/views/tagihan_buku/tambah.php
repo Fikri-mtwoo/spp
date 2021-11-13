@@ -47,7 +47,7 @@
                                                     <select class="form-select" name="jurusan">
                                                         <option value="">Pilih jurusan</option>
                                                             <?php foreach ($jurusan as $jsn) :?>
-                                                                <option value="<?=$jsn['id_jurusan']?>"><?=$jsn['nama_jurusan']."/".$jsn['urut_jurusan']?></option>
+                                                                <option value="<?=$jsn['id_jurusan']?>"><?=$jsn['nama_jurusan']?></option>
                                                             <?php endforeach?>
                                                     </select>
                                                 </div>

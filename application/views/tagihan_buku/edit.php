@@ -54,13 +54,13 @@
                                                     <label>Kelas / Jurusan</label>
                                                 </div>
                                                 <div class="col-md-8 form-group">
-                                                    <input type="text" name="kelas" class="form-control" readonly value="<?=$tagihan_buku->nama_kelas." / ".$tagihan_buku->nama_jurusan." / ".$tagihan_buku->urut_jurusan?>">
+                                                    <input type="text" name="kelas" class="form-control" readonly value="<?=$tagihan_buku->nama_kelas." / ".$tagihan_buku->nama_jurusan?>">
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Total Harga</label>
                                                 </div>
                                                 <div class="col-md-8 form-group">
-                                                    <input type="text" name="toal_harga" class="form-control" readonly value="<?=number_format($tagihan_buku->total_nominal_buku)?>">
+                                                    <input type="text" name="toal_harga" class="form-control" readonly value="Rp. <?=number_format($tagihan_buku->total_nominal_buku)?>">
                                                 </div>
                                                 <div class="col-md-12">
                                                     <p>Daftar buku yang tersedia</p>

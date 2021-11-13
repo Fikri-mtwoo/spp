@@ -102,7 +102,7 @@ class tagihanBukuModel extends CI_Model{
     }
 
     public function get_tagihan_buku_by_nisn($id){
-        $this->db->select('tabel_tagihan_buku.*, tabel_siswa.nama_siswa, tabel_kelas.nama_kelas, tabel_jurusan.nama_jurusan, tabel_jurusan.urut_jurusan');
+        $this->db->select('tabel_tagihan_buku.*, tabel_siswa.nama_siswa, tabel_kelas.nama_kelas, tabel_jurusan.nama_jurusan');
         $this->db->from('tabel_tagihan_buku');
         $this->db->join('tabel_siswa', 'tabel_siswa.nisn_siswa=tabel_tagihan_buku.nisn_siswa');
         $this->db->join('tabel_kelas', 'tabel_kelas.id_kelas=tabel_siswa.id_kelas');
