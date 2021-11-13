@@ -32,7 +32,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Transaksi pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Transaksi pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp. <?=number_format($buku->jumlah_bayar+$gedung->jumlah_bayar+$pendaftaran->jumlah_bayar+$spp->jumlah_bayar)?></h6>
                                             </div>
                                         </div>
@@ -49,7 +49,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Pengeluaran pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Pengeluaran pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp <?=number_format($pengeluaran->saldo)?></h6>
                                             </div>
                                         </div>
@@ -66,7 +66,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Pemasukan pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Pemasukan pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp <?=number_format($pemasukan->saldo)?></h6>
                                             </div>
                                         </div>
@@ -85,7 +85,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Transaksi Buku pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Transaksi Buku pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp <?=number_format($buku->jumlah_bayar)?></h6>
                                             </div>
                                         </div>
@@ -102,7 +102,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Taransaksi Gedung pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Taransaksi Gedung pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp <?=number_format($gedung->jumlah_bayar)?></h6>
                                             </div>
                                         </div>
@@ -119,7 +119,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Transaksi Pendaftaran pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Transaksi Pendaftaran pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp <?=number_format($pendaftaran->jumlah_bayar)?></h6>
                                             </div>
                                         </div>
@@ -136,7 +136,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Total Transaksi SPP pada bulan <?=date('d')?></h6>
+                                                <h6 class="text-muted font-semibold">Total Transaksi SPP pada bulan <?=date('m')?></h6>
                                                 <h6 class="font-extrabold mb-0">Rp <?=number_format($spp->jumlah_bayar)?></h6>
                                             </div>
                                         </div>

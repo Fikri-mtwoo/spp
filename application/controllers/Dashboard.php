@@ -12,12 +12,12 @@ class Dashboard extends CI_Controller {
     public function index(){
         $data['judul'] = 'Halaman dashboard'; 
         $data['siswa'] = $this->dashboard_model->get_siswa();
-        $data['pengeluaran'] = $this->dashboard_model->get_pengeluaran(date('d'));
-        $data['pemasukan'] = $this->dashboard_model->get_pemasukan(date('d'));
-        $data['buku'] = $this->dashboard_model->get_buku(date('d'));
-        $data['gedung'] = $this->dashboard_model->get_gedung(date('d'));
-        $data['pendaftaran'] = $this->dashboard_model->get_pendaftaran(date('d'));
-        $data['spp'] = $this->dashboard_model->get_spp(date('d'));
+        $data['pengeluaran'] = $this->dashboard_model->get_pengeluaran(date('m'));
+        $data['pemasukan'] = $this->dashboard_model->get_pemasukan(date('m'));
+        $data['buku'] = $this->dashboard_model->get_buku(date('m'));
+        $data['gedung'] = $this->dashboard_model->get_gedung(date('m'));
+        $data['pendaftaran'] = $this->dashboard_model->get_pendaftaran(date('m'));
+        $data['spp'] = $this->dashboard_model->get_spp(date('m'));
         $this->load->view('template/header',$data);
         $this->load->view('template/sidebar');
         $this->load->view('dashboard/index');
