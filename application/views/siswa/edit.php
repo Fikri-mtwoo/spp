@@ -102,9 +102,9 @@
                                                 <option value="">Pilih jurusan</option>
                                                     <?php foreach ($jurusan as $jsn) :?>
                                                         <?php if($siswa->id_jurusan == $jsn['id_jurusan']):?>
-                                                            <option value="<?=$jsn['id_jurusan']?>" selected><?=$jsn['nama_jurusan']."/".$jsn['urut_jurusan']?></option>
+                                                            <option value="<?=$jsn['id_jurusan']?>" selected><?=$jsn['nama_jurusan']?></option>
                                                         <?php else :?>
-                                                            <option value="<?=$jsn['id_jurusan']?>"><?=$jsn['nama_jurusan']."/".$jsn['urut_jurusan']?></option>
+                                                            <option value="<?=$jsn['id_jurusan']?>"><?=$jsn['nama_jurusan']?></option>
                                                         <?php endif?>
                                                     <?php endforeach?>
                                             </select>

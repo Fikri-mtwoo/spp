@@ -98,7 +98,7 @@ class siswaModel extends CI_Model{
     }
 
     public function get_jurusan(){
-        $this->db->select('id_jurusan, nama_jurusan, urut_jurusan');
+        $this->db->select('id_jurusan, nama_jurusan');
         $this->db->from('tabel_jurusan');
         return $this->db->get()->result_array();
     }
