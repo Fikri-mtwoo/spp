@@ -2,9 +2,9 @@
 
 class tagihanSppModel extends CI_Model{
     var $table = 'tabel_transaksi_spp';
-    var $kolom_order = array(null,'nama_siswa');
+    var $kolom_order = array(null,null,'nama_siswa', 'nama_kelas');
     var $kolom_cari = array('nama_siswa');
-    var $order = array('nama_siswa'=>'asc');
+    var $order = array('nama_siswa'=>'asc', 'nama_kelas'=>'asc');
 
     private function get_datatables_query(){
         $this->db->select('tabel_transaksi_spp.*, tabel_siswa.nama_siswa, tabel_kelas.nama_kelas, tabel_spp.nominal_spp');

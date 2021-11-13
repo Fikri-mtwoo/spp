@@ -107,8 +107,8 @@ class TagihanSpp extends CI_Controller{
             $row[] = $field->jumlah_bayar;
             $row[] = $field->tanggal_bayar;
             $row[] = $field->id_petugas;
-            $row[] = "  <a href='".base_url('tagihanspp/edit?id=')."".$field->id_transaksi_spp."'><button type='button' class='btn btn-primary btn-sm'>Edit</button></a> |
-            <a href='".base_url('tagihanspp/hapus?id=')."".$field->id_transaksi_spp."' onclick='return confirm(\"Anda yakin ingin menghapus tagihan spp ini ?\")'><button type='button' class='btn btn-danger btn-sm'>Hapus</button></a>";
+            $row[] = "
+            <a href='".base_url('tagihanspp/hapus?id=')."".$field->id_transaksi_spp."'><button type='button' class='btn btn-primary btn-sm'>Edit</button></a>";
 
             $data[] = $row;
         }
