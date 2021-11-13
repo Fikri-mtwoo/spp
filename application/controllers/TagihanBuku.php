@@ -81,14 +81,14 @@ class TagihanBuku extends CI_Controller{
                     'total_buku' => count($buku),
                     'total_nominal_buku' => $total_nominal_buku
                 ];
-                if($this->tagihanBukuModel->insert_batch_tagihan_buku($data) && $this->tagihanBukuModel->insert_batch_detail_tagihan_buku($data_detail)){
-                    $this->session->set_flashdata(['type'=>'alert-success','pesan'=>'Tagihan buku berhasil ditambah']);
-                }else{
-                    $this->session->set_flashdata(['type'=>'alert-danger','pesan'=>'Tagihan buku gagal ditambah']);
-                }
-                redirect(base_url('tagihanbuku'));
             }
         }
+        if($this->tagihanBukuModel->insert_batch_tagihan_buku($data) && $this->tagihanBukuModel->insert_batch_detail_tagihan_buku($data_detail)){
+            $this->session->set_flashdata(['type'=>'alert-success','pesan'=>'Tagihan buku berhasil ditambah']);
+        }else{
+            $this->session->set_flashdata(['type'=>'alert-danger','pesan'=>'Tagihan buku gagal ditambah']);
+        }
+        redirect(base_url('tagihanbuku'));
     }
 
     public function edit(){
